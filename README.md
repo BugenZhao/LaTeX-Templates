@@ -3,8 +3,8 @@
 
 ### Preview
 
-- [中文](tree/master/zh/main.pdf)  
-- [English](tree/master/en/main.pdf)
+- [中文](zh/main.pdf)  
+- [English](en/main.pdf)
 
 
 

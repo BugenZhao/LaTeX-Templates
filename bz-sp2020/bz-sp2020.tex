@@ -1,0 +1,92 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{CJKutf8}
+\usepackage{amsmath,amscd,amsbsy,amssymb,latexsym,url,bm,amsthm}
+\usepackage{epsfig,graphicx,subfigure}
+\usepackage{enumitem,balance}
+\usepackage{wrapfig}
+\usepackage{mathrsfs,euscript}
+\usepackage[usenames]{xcolor}
+\usepackage{hyperref}
+\usepackage[vlined,ruled,linesnumbered]{algorithm2e}
+\usepackage{textcomp}
+\usepackage{enumitem}
+\hypersetup{colorlinks=true,linkcolor=black}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{exercise}{Exercise}
+\newtheorem*{solution}{Solution}
+\newtheorem{definition}{Definition}
+\theoremstyle{definition}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\newcommand{\postscript}[2]
+ {\setlength{\epsfxsize}{#2\hsize}
+  \centerline{\epsfbox{#1}}}
+
+\renewcommand{\baselinestretch}{1.0}
+
+\setlength{\oddsidemargin}{-0.365in}
+\setlength{\evensidemargin}{-0.365in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{10.1in}
+\setlength{\textwidth}{7in}
+\makeatletter \renewenvironment{proof}[1][Proof] {\par\pushQED{\qed}\normalfont\topsep6\p@\@plus6\p@\relax\trivlist\item[\hskip\labelsep\bfseries#1\@addpunct{.}]\ignorespaces}{\popQED\endtrivlist\@endpefalse} \makeatother
+\makeatletter
+\renewenvironment{solution}[1][Solution] {\par\pushQED{\qed}\normalfont\topsep6\p@\@plus6\p@\relax\trivlist\item[\hskip\labelsep\bfseries#1\@addpunct{.}]\ignorespaces}{\popQED\endtrivlist\@endpefalse} \makeatother
+
+
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\noindent
+
+%========================================================================
+\noindent\framebox[\linewidth]{\shortstack[c]{
+\Large{\textbf{Assignment 233}}\vspace{1mm}\\
+Pasokon no Sora, Spring 2020.}}
+\begin{center}
+
+% Please write down your name, student id, and email.
+John Appleseed  \quad 518 
+\end{center}
+
+\begin{enumerate}[itemsep=15pt]
+    
+    \item
+    Briefly describe the main difference between Windows and macOS.
+    
+    \textbf{Main difference.} Think different.  
+    
+    \textbf{Some of their pros and cons.}
+    
+\begin{table}[!htbp]
+\label{tab:arch-vs}
+\centering
+\begin{tabular}{lp{6cm}p{6cm}}
+\hline
+                & Windows                                                                        & macOS                                                                              \\ \hline
+\textbf{Dope}       & Bill.   & Steve. \\
+\textbf{Nope}    & Ads.   & Bugs. \\
+\hline
+\end{tabular}
+\end{table}
+    
+    \item
+    Briefly describe the concept of the template.
+    
+    \begin{itemize}
+        \item \textbf{Hello.} \LaTeX .
+        \item \textbf{Hi.} Bugen.
+    \end{itemize}
+    
+   \end{enumerate}
+
+\vspace{20pt}
+%========================================================================
+\end{CJK}
+\end{document}

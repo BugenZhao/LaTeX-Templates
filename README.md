@@ -3,9 +3,8 @@
 
 ### Preview
 
-- [中文](zh/main.pdf)  
-- [English](en/main.pdf)
 - [Spring 2020](bz-sp2020/bz-sp2020.pdf)
+- [Report](report/latex/main.pdf)
 
 
 ### BugenZhao, SJTU, Oct 2019.

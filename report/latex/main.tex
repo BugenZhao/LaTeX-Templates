@@ -1,0 +1,142 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{xeCJK}
+\usepackage{listings}
+\usepackage{graphicx} % Required for the inclusion of images
+\usepackage{subfigure} % Required for the inclusion of images
+\usepackage{natbib} % Required to change bibliography style to APA
+\usepackage{amsmath} % Required for some math elements 
+\usepackage{tcolorbox}
+%\usepackage{tgbonum}
+\usepackage{indentfirst}
+\usepackage{underscore}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+\usepackage{sectsty}
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage{fix-cm}
+\usepackage{url}
+\usepackage[nottoc,numbib]{tocbibind} % show refernce in toc
+\usepackage[vlined,ruled,linesnumbered]{algorithm2e}
+%\usepackage[english]{babel}
+\usepackage{subfiles}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{tipa}
+\usepackage[bottom]{footmisc}
+\usepackage{fontspec}
+
+\pagestyle{fancy}
+\renewcommand{\baselinestretch}{1.2}
+
+\renewcommand{\figurename}{图}
+\renewcommand{\tablename}{表} 
+\renewcommand{\contentsname}{目~录} 
+\settocbibname{参考文献}
+
+\hypersetup{colorlinks=true,linkcolor={black},urlcolor={purple}}
+
+\newcommand{\bugenfont}{\fontencoding{T1}\fontfamily{bch}\selectfont}
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{\textbf{Template}} % Title
+\author{Bugen Zhao\quad 518000000000\\ a@b.c } % Author name and email
+\date{\number\year 年 \number\month 月 \number\day 日} % Date for the report
+%\date{\today}
+
+
+%\newlength{\eightytt}
+%\newcommand{\testthewidth}{%
+%  \fontsize{\dimen0}{0}\selectfont
+%  \settowidth{\dimen2}{x}%
+%  \ifdim 83\dimen2>\textwidth
+%    \advance\dimen0 by -.1pt
+%    \expandafter\testthewidth
+%  \else
+%    \global\eightytt\dimen0
+%  \fi
+%}
+%
+%\AtBeginDocument{%
+%  \dimen0=\csname f@size\endcsname pt
+%  \begingroup
+%  \ttfamily
+%  \testthewidth
+%  \endgroup
+%  \lstset{
+%    columns=flexible,
+%    basicstyle=\fontsize{\eightytt}{1.2\eightytt}\ttfamily
+%  }%
+%}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{mauve}{rgb}{0.58,0,0.50}
+
+\lstset{
+language=python,                             % Code langugage
+basicstyle=\small\ttfamily,             % Code font, Examples: \footnotesize, \ttfamily
+keywordstyle=\color{purple},            % Keywords font ('*' = uppercase)
+commentstyle=\em\color{gray},           % Comments font
+numbers=left,                           % Line nums position
+numberstyle=\tiny\ttfamily,             % Line-numbers fonts
+stringstyle=\color{mauve},
+stepnumber=1,                           % Step between two line-numbers
+numbersep=5pt,                          % How far are line-numbers from code
+frame=tb,                             % A frame around the code
+aboveskip=3mm,
+belowskip=3mm,
+tabsize=4,                              % Default tab size
+captionpos=b,                           % Caption-position = bottom
+breaklines=true,                        % Automatic line breaking?
+breakatwhitespace=false,                % Automatic breaks only at whitespace?
+showspaces=false,                       % Dont make spaces visible
+showstringspaces=false,
+showtabs=false,                         % Dont make tabls visible
+basewidth=0.5em,
+morekeywords={True, False},
+columns=flexible,
+keepspaces=true
+}
+
+\def\inline{\lstinline[basicstyle=\ttfamily] 
+}
+% 
+\begin{document}
+
+%\bugenfont
+%\allsectionsfont{\bugenfont}
+
+\tabletopcaptrue
+
+\maketitle % Insert the title, author and date
+
+\tableofcontents
+
+%----------------------------------------------------------------------------------------
+\pagebreak
+
+\section{准备}
+\section{实验}
+\subsection{步骤一}
+\subsection{步骤二}
+\paragraph{注} Test
+\section{结语}
+
+
+%----------------------------------------------------------------------------------------
+\pagebreak
+
+
+%\nocite{*}
+%\bibliographystyle{IEEEtran}
+%\bibliography{ref}
+\end{document}

@@ -1,0 +1,12 @@
+---
+fontsize: 12pt         # optional
+zh: false
+title: 'Pandoc Template'
+author: 'Bugen Zhao'
+stuid: '518000000000'  # optional
+mail: 'a@b.c'          # optional
+toc: true
+toc-pagebreak: false
+links-as-notes: true
+bugen-font: true
+...
